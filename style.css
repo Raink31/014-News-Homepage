@@ -239,11 +239,6 @@ h1{
     cursor: pointer;
 }
 
-button{
-    border: none;
-    background: transparent;
-}
-
 .news a{
     color: white;
     text-decoration: none;

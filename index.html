@@ -12,46 +12,49 @@
     <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
-    <div class="top-section">
         <header>
-            <div class="logo_flex"><img src="assets/images/logo.svg" alt="logo"></div>
-            <img src="assets/images/icon-menu.svg" alt="navigation open menu" class="nav-open-btn">
+            <div class="logo"><img src="assets/images/logo.svg" alt="logo"></div>
+            <nav>
+                <button aria-expanded="open_menu_button"><img src="assets/images/icon-menu.svg" alt="open_menu_button" class="nav-open-btn"></button>
+                <div class="nav-bar">
+                    <ul class="nav-links">
+                        <li><a href="#" class="nav-link p-text">Home</a></li>
+                        <li><a href="#" class="nav-link p-text">New</a></li>
+                        <li><a href="#" class="nav-link p-text">Popular</a></li>
+                        <li><a href="#" class="nav-link p-text">Trending</a></li>
+                        <li><a href="#" class="nav-link p-text">Categories</a></li>
+                    </ul>
+                    <button aria-expanded="close_menu_button"><img src="assets/images/icon-menu-close.svg" alt="close_menu_button" class="nav-close-btn"></button>
+                </div>
+            </nav>
         </header>
-        <nav class="nav-bar">
-            <ul class="nav-links">
-                <li><a href="#" class="nav-link p-text">Home</a></li>
-                <li><a href="#" class="nav-link p-text">New</a></li>
-                <li><a href="#" class="nav-link p-text">Popular</a></li>
-                <li><a href="#" class="nav-link p-text">Trending</a></li>
-                <li><a href="#" class="nav-link p-text">Categories</a></li>
-            </ul>
-            <img src="assets/images/icon-menu-close.svg" alt="navigation close button" class="nav-close-btn">
-        </nav>
-    </div>
     <main>
         <section class="section1">
             <article class="main_article">
-                <div><img src="assets/images/image-web-3-mobile.jpg" alt=""></div>
-                <h1>The Bright Future of Web 3.0?</h1>
-                <p>We dive into the next evolution of the web that claims to put the power of the platforms back
-                    into the hands of the people. But is it really fulfilling its promise ?</p>
-                <div class="read_more">
-                    <a href="#">READ MORE</a>
+                <img src="assets/images/image-web-3-mobile.jpg" alt="" class="image-mobile">
+                <img src="assets/images/image-web-3-desktop.jpg" alt="" class="image-desktop">
+                <div class="main_article_text">
+                    <h1>The Bright Future of Web 3.0?</h1>
+                    <div class="main_article_paragraph">
+                        <p>We dive into the next evolution of the web that claims to put the power of the platforms back
+                        into the hands of the people. But is it really fulfilling its promise ?</p>
+                        <a href="#" class="read_more">READ MORE</a>
+                    </div>
                 </div>
             </article>
             <aside class="news">
                 <h2>New</h2>
                 <ul>
                     <li>
-                        <h3>Hydrogen VS Electric Cars</h3>
+                        <a href="#"><h3>Hydrogen VS Electric Cars</h3></a>
                         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
                     </li>
                     <li class="middle_li">
-                        <h3>The Downsides of AI Artistry</h3>
+                        <a href="#"><h3>The Downsides of AI Artistry</h3></a>
                         <p>What are the possible adverse effects of on-demand AI image generation?</p>
                     </li>
                     <li>
-                        <h3>Is VC Funding Drying Up?</h3>
+                        <a href="#"><h3>Is VC Funding Drying Up?</h3></a>
                         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
                     </li>
                 </ul>
@@ -59,35 +62,35 @@
         </section>
         <section class="section2">
             <div class="other_article">
-                <div class="article_image"><img src="assets/images/image-retro-pcs.jpg" alt="retro_pc_image"></div>
+                <div class="article_image"><img src="assets/images/image-retro-pcs.jpg" alt=""></div>
                 <div class="content">
-                    <h2>01</h2>
-                    <h3>Reviving Retro PCs</h3>
-                    <p>What happens when old PCs are given modern upgrades?</p>
+                    <p class="content_number">01</p>
+                    <a href="#"><h3>Reviving Retro PCs</h3></a>
+                    <p class="content_description">What happens when old PCs are given modern upgrades?</p>
                 </div>
             </div>
             <div class="other_article">
-                <div class="article_image"><img src="assets/images/image-top-laptops.jpg" alt="laptop_image"></div>
+                <div class="article_image"><img src="assets/images/image-top-laptops.jpg" alt=""></div>
                 <div class="content">
-                    <h2>02</h2>
-                    <h3>Top 10 Laptops of 2022</h3>
-                    <p>Our best picks for various needs and budgets.</p>
+                    <p class="content_number">02</p>
+                    <a href="#"><h3>Top 10 Laptops of 2022</h3></a>
+                    <p class="content_description">Our best picks for various needs and budgets.</p>
                 </div>
             </div>
             <div class="other_article">
-                <div class="article_image"><img src="assets/images/image-gaming-growth.jpg" alt="controller_image"></div>
+                <div class="article_image"><img src="assets/images/image-gaming-growth.jpg" alt=""></div>
                 <div class="content">
-                    <h2>03</h2>
-                    <h3>The Growth of Gaming</h3>
-                    <p>How the pandemic has sparked fresh opportunities.</p>
+                    <p class="content_number">03</p>
+                    <a href="#"><h3>The Growth of Gaming</h3></a>
+                    <p class="content_description">How the pandemic has sparked fresh opportunities.</p>
                 </div>
             </div>
         </section>
     </main>
-    <!-- <footer class="attribution">
+    <footer class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Yohan Baes</a>.
-    </footer> -->
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>
